@@ -3,15 +3,16 @@ import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import jwt from "jsonwebtoken";
-import connectDB from "./config/db.js";
+import connectDB from "./src/config/db.js";
+
 import authRoutes from "./routes/authRoutes.js";
 import noteRoutes from "./routes/noteRoutes.js";
 import path from "path";
-
+const app = express();
 dotenv.config();
 connectDB();
 
-const app = express();
+
 
 
 app.use(express.json());
