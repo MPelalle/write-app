@@ -5,8 +5,8 @@ import mongoose from "mongoose";
 import jwt from "jsonwebtoken";
 import connectDB from "./src/config/db.js";
 
-import authRoutes from "./routes/authRoutes.js";
-import noteRoutes from "./routes/noteRoutes.js";
+import authRoutes from "./src/routes/authRoutes.js";
+import noteRoutes from "./src/routes/noteRoutes.js";
 import path from "path";
 const app = express();
 dotenv.config();
